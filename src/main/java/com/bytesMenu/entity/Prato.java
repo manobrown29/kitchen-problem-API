@@ -7,9 +7,10 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "pratos")
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
+@Builder
 public class Prato {
 
     @Id
@@ -25,4 +26,5 @@ public class Prato {
     private BigDecimal preco;
 
     private Boolean disponivel = true;
+
 }
